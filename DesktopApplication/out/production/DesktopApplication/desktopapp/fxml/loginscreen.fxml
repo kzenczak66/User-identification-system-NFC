@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="392.0" prefWidth="400.0" style="-fx-background-color: #333333;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktopapp.controllers.LoginscreenController">
+    <children>
+        <TextField fx:id="text_login" layoutX="50.0" layoutY="128.0" prefWidth="300.0" promptText="Login:" style="-fx-background-color: #454545; -fx-background-radius: 20;">
+            <font>
+                <Font size="20.0" />
+            </font></TextField>
+        <PasswordField fx:id="text_haslo" layoutX="50.0" layoutY="183.0" prefWidth="300.0" promptText="Hasło:" style="-fx-background-color: #454545; -fx-background-radius: 20;">
+            <font>
+                <Font size="20.0" />
+            </font></PasswordField>
+        <Label layoutX="22.0" layoutY="25.0" text="Logowanie" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="79.0" />
+            </font>
+        </Label>
+        <Button fx:id="btn_zaloguj" layoutX="31.0" layoutY="266.0" mnemonicParsing="false" onAction="#btn_zalogujOnAction" prefWidth="150.0" style="-fx-background-color: #454545; -fx-background-radius: 15;" text="Zaloguj" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+        <Button fx:id="btn_wyjdz" layoutX="216.0" layoutY="266.0" mnemonicParsing="false" onAction="#btn_wyjdzOnAction" prefWidth="150.0" style="-fx-background-color: #454545; -fx-background-radius: 15;" text="Wyjdź" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+        <Label fx:id="lbl_login_info" layoutX="63.0" layoutY="230.0" textFill="RED">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+      <TextField fx:id="text_IP" disable="true" editable="false" layoutX="22.0" layoutY="313.0" prefHeight="44.0" prefWidth="356.0" style="-fx-background-color: #454545; -fx-background-radius: 20;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>

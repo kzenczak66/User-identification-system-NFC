@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="337.0" prefWidth="454.0" style="-fx-background-color: #333333;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktopapp.controllers.AddWorkerController">
+
+    <children>
+        <Label layoutX="25.0" layoutY="20.0" text="Imię:" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="20.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="94.0" text="Login:" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="94.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="133.0" text="Hasło:" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="133.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtImie" layoutX="176.0" layoutY="20.0" promptText="Imię:" style="-fx-background-radius: 15; -fx-background-color: #454545;" AnchorPane.topAnchor="20.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtNazwisko" layoutX="176.0" layoutY="57.0" promptText="Nazwisko:" style="-fx-background-radius: 15; -fx-background-color: #454545;">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtLogin" layoutX="176.0" layoutY="94.0" promptText="Login:" style="-fx-background-radius: 15; -fx-background-color: #454545;" AnchorPane.topAnchor="94.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Button fx:id="btnExit" layoutX="295.0" layoutY="293.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnExitOnAction" prefHeight="70.0" prefWidth="115.0" style="-fx-background-color: #454545; -fx-background-radius: 15;" text="Wyjdź" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+        <Label layoutX="25.0" layoutY="57.0" text="Nazwisko:" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+      <PasswordField fx:id="txtHaslo" layoutX="176.0" layoutY="133.0" prefHeight="30.0" prefWidth="175.0" promptText="Hasło:" style="-fx-background-radius: 15; -fx-background-color: #454545;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btnAdd" layoutX="10.0" layoutY="293.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="70.0" prefWidth="115.0" style="-fx-background-color: #454545; -fx-background-radius: 15;" text="Dodaj" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="14.0" />
+      <Label layoutX="25.0" layoutY="174.0" text="Id_urządzenia:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radioP" layoutX="271.0" layoutY="213.0" mnemonicParsing="false" selected="true" text="P" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="upraw" />
+         </toggleGroup>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioA" layoutX="217.0" layoutY="213.0" mnemonicParsing="false" text="A" textFill="WHITE" toggleGroup="$upraw">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="23.0" layoutY="209.0" text="Uprawnienia:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId_urz" layoutX="176.0" layoutY="174.0" onMouseClicked="#updateOnMouseClicked" promptText="Kliknij aby uzupełnić..." style="-fx-background-radius: 15; -fx-background-color: #454545;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>

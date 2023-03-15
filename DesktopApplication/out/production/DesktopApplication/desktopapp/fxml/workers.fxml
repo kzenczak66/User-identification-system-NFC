@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="672.0" prefWidth="971.0" style="-fx-background-color: #333333;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktopapp.controllers.WorkersController">
+    <children>
+        <TableView fx:id="tabWorkers" layoutX="10.0" layoutY="14.0" prefHeight="339.0" prefWidth="520.0" AnchorPane.bottomAnchor="146.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+            <columns>
+                <TableColumn fx:id="colId_p" prefWidth="88.0" text="id" />
+                <TableColumn fx:id="colImie" prefWidth="100.0" text="Imię" />
+                <TableColumn fx:id="colNazwisko" prefWidth="133.0" text="Nazwisko" />
+                <TableColumn fx:id="colLogin" prefWidth="135.0" text="Login" />
+                <TableColumn fx:id="colHaslo" prefWidth="81.0" text="Hasło" />
+                <TableColumn fx:id="colId_u" prefWidth="134.0" text="idUrządzenia" />
+            <TableColumn fx:id="colUpraw" minWidth="0.0" prefWidth="117.0" text="Uprawnienia" />
+            <TableColumn fx:id="colEdytuj" prefWidth="72.0" />
+            <TableColumn fx:id="colUsun" prefWidth="71.0" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnAddWorker" layoutX="22.0" layoutY="377.0" mnemonicParsing="false" onAction="#btnAddWorkerOnAction" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #454545; -fx-background-radius: 20;" text="+" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0">
+            <font>
+                <Font name="Arial Bold" size="43.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnExit" layoutX="716.0" layoutY="357.0" mnemonicParsing="false" onAction="#btnExitOnAction" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #454545; -fx-background-radius: 20;" text="Wyjdź" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font></Button>
+    </children>
+</AnchorPane>
